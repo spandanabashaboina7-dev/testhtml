@@ -1,0 +1,134 @@
+.main-header
+{
+    text-align: center;
+    color: aqua;
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.main-header.logo
+{
+     
+    width: 55px;
+    height:55px;
+    padding: 8px 14px;
+    margin: 10 px 0;
+}
+.main-header.logo img
+{
+    border-radius: 5px;
+}
+.main-header.title h1
+{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+h1
+{
+    color: blueviolet;
+}
+.bgimage
+{
+     background-image: url("../images/logo.jpg");
+     background-repeat: no-repeat;
+     background-position:  center;
+     text-align: center;
+}
+.maincomponent
+{
+    display:flex;
+    border: 2px solid black;
+}
+.box{
+width: 150px;
+height: 150px;
+text-align: center;
+font-size: 8re;
+border-radius: 15px;
+transition: width 2s, height 2s,transform 3s;
+transition-delay: 1s;
+}
+#box1{
+    background-color: aqua;
+    transition-timing-function: linear;
+}
+#box2{
+    background-color: rgb(39, 61, 4);
+    transition-timing-function: ease-out;
+}
+#box3{
+    background-color: aquamarine;
+    transition-timing-function: ease-in-out;
+}
+#box4{
+    background-color: bisque;
+    transition-timing-function: ease-in;
+}
+#box4:hover
+{
+    background-color: blue;
+    width: 500px;
+}
+.newrotate{
+width: 150px;
+height: 150px;
+border-radius: 15px;
+transition: width 2s, height 2s,transform 3s;
+background-color: aqua;
+}
+#newrotate:hover{
+    width: 500px;
+    height: 250px;
+    transform:rotate(360deg);
+}
+
+ @keyframes animid {
+    from{background-color: blueviolet;}
+    to{background-color: rgb(166, 135, 222);}
+ }
+   
+.animi{
+    width: 160px;
+    height: 160px;
+    animation-name: animid;
+    animation-duration: 10s;
+}
+
+@keyframes scrollleft
+{
+    from{transform:translatex(100%);}
+    to{transform:translatex(-100%)}
+}
+.scrolltext span
+{
+    display: inline-block;
+    padding-left: 100px;
+    animation:  scroll-left 5s linear infinite;
+}
+
+.scrolltext span
+{
+    display: inline-block;
+    padding-left: 100px;
+    animation:  scroll-left 5s linear infinite;
+}
+
+
+@keyframes scrollright
+{
+    from{transform:translatex(-100%);}
+    to{transform:translatex(+100%)}
+}
+.scrolltext span
+{
+    display: inline-block;
+    padding-right: 100px;
+    animation:  scroll-right 5s linear infinite;
+}
+
